@@ -12,12 +12,25 @@ body {
 	padding: 0;
 }
 
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 1230px;
+	margin: 0 auto;
+}
+
 .header {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	width: 100vw;
 	min-height: 1100px;
 	padding: 115px 210px;
 	padding-bottom: 230px;
@@ -32,6 +45,10 @@ body {
 	position: absolute;
 	top: 50%;
 	width: 100%;
+
+	img {
+		width: 100%;
+	}
 }
 
 .title-wrapper {
@@ -319,15 +336,114 @@ body {
 	bottom: 0;
 }
 
+section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
 .section__title {
 	text-transform: uppercase;
-	font-size: 48px;
+	margin-bottom: 80px;
+	font-family: Academy, serif;
+	font-size: 30px;
 	text-align: center;
 	color: $color-primary;
 
 	h2 {
-		margin-bottom: 0;
+		margin-bottom: 10px;
 	}
+}
+
+.card-about__wrapper {
+	margin-right: 70px;
+}
+
+.about-text__wrapper {
+	width: 700px;
+}
+
+.about__text {
+	margin-top: 0;
+	font-size: 30px;
+}
+
+.text__purple {
+	color: $color-primary;
+}
+
+.specifications {
+	position: relative;
+	background-color: #ffc0d3;
+}
+
+.star-specification {
+	position: absolute;
+	width: 100%;
+
+	img {
+		width: 100%;
+	}
+}
+
+.card-specifications {
+	z-index: 1;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+	padding: 40px;
+	font-size: 30px;
+	background-color: $color-primary;
+
+	&::after {
+		z-index: -1;
+		content: "";
+		position: absolute;
+		display: block;
+		top: -10px;
+		left: -10px;
+		width: 100%;
+		height: 100%;
+		border: 3px solid $color-primary;
+		background-color: #fff;
+	}
+
+	&:nth-child(2) {
+		.specifications-list__title {
+			color: $color-secondary;
+		}
+
+		img {
+			color: $color-secondary;
+		}
+	}
+}
+
+.specifications-list__item {
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
+
+	img {
+		width: 60px;
+		margin-right: 20px;
+		vertical-align: top;
+	}
+}
+
+.specifications-list__title {
+	margin: 0;
+	font-weight: 700;
+	color: $color-primary;
+}
+
+.specifications-list__text {
+	display: inline-block;
+}
+
+.specifications-list__description {
+	margin: 0;
+	font-weight: 100;
 }
 
 @import "media";
