@@ -1,5 +1,255 @@
-@import 'fonts';
+@import "fonts";
+@import "vars";
 
+* {
+	box-sizing: border-box;
+}
 
+html,
+body {
+	font-family: Jost, serif;
+	margin: 0;
+	padding: 0;
+}
 
-@import 'media'
+.header {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	min-height: 1100px;
+	padding: 115px 210px;
+	text-align: center;
+	background-image: url(../images/Розовый-фон-с-замком.png);
+	background-size: cover;
+	background-position: 50% 0;
+}
+
+.title-wrapper {
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.title {
+	margin: 0 auto;
+	width: 500px;
+}
+
+.desc {
+	position: absolute;
+	left: 50%;
+	width: 240px;
+	margin: 0 auto;
+	transform: translateX(-50%);
+}
+
+.card-description__wrapper {
+	z-index: 1;
+	position: relative;
+	width: max-content;
+	height: auto;
+	background-color: #fff;
+
+	&::after {
+		z-index: -1;
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 5px;
+		left: 5px;
+		background-color: $color-primary;
+	}
+}
+
+.card-description {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	width: 532px;
+	border: 5px solid $color-primary;
+	background-color: #fff;
+}
+
+.card-description__info {
+	padding: 13px 50px;
+}
+
+.card-description__circle {
+	z-index: 1;
+	position: absolute;
+	top: -115px;
+	right: -115px;
+	width: 230px;
+	min-height: 230px;
+	border-radius: 50%;
+	background-color: $color-primary;
+}
+
+.card-description__bonus-amount {
+	z-index: 2;
+	position: absolute;
+	top: 20px;
+	right: 5px;
+	font-size: 36px;
+	color: #fff;
+}
+
+.card-description__old-price {
+	position: relative;
+	font-family: Jost, serif;
+	font-weight: 600;
+	font-size: 48px;
+	text-align: center;
+	color: #a2a2a2;
+}
+
+.card-description__line {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 185px;
+	height: 6px;
+	background-image: url(../images/line.png);
+	transform: translate(-50%, -50%);
+}
+
+.card-description__new-price {
+	font-family: Jost, serif;
+	font-weight: 600;
+	font-size: 90px;
+	text-align: center;
+	color: #b4976d;
+}
+
+.halfStyle {
+	position: relative;
+	display: inline-block;
+	margin-left: -25px;
+	font-size: 90px; /* or any font size will work */
+	color: transparent; /* hide the base character */
+	overflow: hidden;
+	white-space: pre; /* to preserve the spaces from collapsing */
+
+	&:first-child {
+		margin-left: 0px;
+	}
+
+	&:nth-child(3) {
+		margin-left: -40px;
+	}
+}
+
+.halfStyle:before {
+	/* creates the top part */
+	display: block;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	height: 50%;
+	content: attr(data-content); /* dynamic content for the pseudo element */
+	overflow: hidden;
+	pointer-events: none; /* so the base char is selectable by mouse */
+	color: $color-primary; /* for demo purposes */
+}
+
+.halfStyle:after {
+	/* creates the bottom part */
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	height: 100%;
+	content: attr(data-content); /* dynamic content for the pseudo element */
+	overflow: hidden;
+	pointer-events: none; /* so the base char is selectable by mouse */
+	color: #862366; /* for demo purposes */
+}
+
+.currency {
+	margin-top: -70px;
+	margin-bottom: 0px;
+	font-size: 36px;
+	color: #646464;
+}
+
+.card-description__duration {
+	font-weight: 600;
+	text-align: center;
+	color: #481738;
+}
+
+.order__title {
+	margin-top: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-size: 48px;
+	text-align: center;
+	color: $color-primary;
+}
+
+.card-description__text {
+	font-size: 24px;
+	text-align: center;
+}
+
+.card-description__pink {
+	color: $color-primary;
+}
+
+.card-description__bg {
+	margin-top: auto;
+	height: 200px;
+	background-image: url(../images/hand.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.btn-order {
+	position: absolute;
+	left: 50%;
+	bottom: -40px;
+	padding: 10px 15px;
+	border: 5px solid $color-primary;
+	font-size: 30px;
+	font-weight: 400;
+	color: $color-primary;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #fff;
+	transform: translateX(-50%);
+
+	img {
+		vertical-align: top;
+		margin-right: 10px;
+	}
+}
+
+.box {
+	position: absolute;
+	bottom: -50px;
+	left: -230px;
+}
+
+.promo {
+	z-index: 1;
+	position: absolute;
+	padding: 15px 20px;
+	border: 3px solid $color-primary;
+	border-bottom: 10px solid $color-primary;
+	text-transform: uppercase;
+	font-size: 48px;
+	font-weight: 600;
+	color: #a42d82;
+	background-color: #fff;
+	transform: translate(-40%, -50%);
+}
+
+.fairy {
+	position: relative;
+	top: -40px;
+}
+
+@import "media";

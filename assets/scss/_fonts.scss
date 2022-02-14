@@ -1,0 +1,11 @@
+@font-face {
+	font-family: "Jost";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/inter-v3-latin/inter-v3-latin-regular.eot"); /* IE9 Compat Modes */
+	src: local(""),
+		/* Modern Browsers */ url("../fonts/Jost/Jost-VariableFont_wght.ttf")
+			format("truetype"),
+		/* Modern Browsers */ url("../fonts/Jost/Jost-Italic-VariableFont_wght.ttf")
+			format("truetype");
+}
