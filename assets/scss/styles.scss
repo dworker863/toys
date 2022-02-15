@@ -592,6 +592,13 @@ section {
 .order {
   position: relative;
   background-image: url(../images/Розовый-фон-с-замком.png);
+  background-size: cover;
+
+  .fairy {
+    z-index: 200;
+    top: 84%;
+    left: 51%;
+  }
 }
 
 .order__form {
