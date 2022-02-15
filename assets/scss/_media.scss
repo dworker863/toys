@@ -12,6 +12,22 @@
     margin-top: 600px;
     width: 100%;
   }
+
+  .card-specifications {
+    font-size: 24px;
+  }
+
+  .specifications-list__item {
+    margin-left: 20px;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .fairy-img {
+    width: 350px;
+  }
 }
 
 @media (max-width: 1600px) {
