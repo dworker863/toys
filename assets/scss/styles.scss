@@ -28,6 +28,7 @@ ul {
 }
 
 .header {
+  overflow: hidden;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -396,6 +397,10 @@ section {
   justify-content: center;
 }
 
+.card-specifications {
+  flex-wrap: nowrap;
+}
+
 .star-specification {
   position: absolute;
   width: 100%;
@@ -409,7 +414,6 @@ section {
   z-index: 1;
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 80px;
   padding: 40px;
   font-size: 30px;

@@ -99,9 +99,26 @@
 }
 
 @media (max-width: 1040px) {
+  .container {
+    width: 720px;
+  }
+
+  .title {
+    width: 640px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+
   .container-about {
     flex-direction: column;
     align-items: center;
+  }
+
+  .fairy {
+    top: 59%;
+    left: 50%;
   }
 
   .card-about__wrapper {
@@ -114,5 +131,306 @@
 
   .about__text {
     text-align: center;
+  }
+
+  .promotions {
+    background-position: 50% 0;
+  }
+
+  .card-description__bonus-amount {
+    right: 10px;
+    font-size: 32px;
+  }
+
+  .card-description__old-price {
+    font-size: 36px;
+  }
+
+  .card-description__line {
+    width: 150px;
+  }
+
+  .card-description__new-price {
+    font-size: 64px;
+  }
+
+  .halfStyle {
+    font-size: 64px;
+    margin-left: -18px;
+
+    &:nth-child(3) {
+      margin-left: -30px;
+    }
+  }
+
+  .currency {
+    margin-top: -55px;
+    font-size: 32px;
+  }
+
+  .order__title {
+    font-size: 38px;
+  }
+
+  .card-description__text {
+    font-size: 18px;
+  }
+
+  .card-specifications {
+    font-size: 16px;
+  }
+
+  .specifications-list__item {
+    margin-left: 20px;
+
+    img {
+      width: 35px;
+      margin-right: 20px;
+    }
+  }
+
+  .specifications-list__description {
+    line-height: 24px;
+  }
+
+  .fairy-img {
+    width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+
+  .section__title {
+    font-size: 24px;
+  }
+
+  .card-description {
+    width: 500px;
+  }
+
+  .card-description__wrapper {
+    left: 6%;
+  }
+
+  .card-specifications {
+    margin-left: 10px;
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
+
+  .specifications-list {
+    margin-bottom: 40px;
+  }
+
+  .specifications-list__item {
+    margin-left: 0;
+
+    img {
+      width: 40px;
+      margin-right: 20px;
+    }
+  }
+
+  .fairy-img {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 720px) {
+  section {
+    padding: 80px 0;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .about-text__wrapper {
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  .title {
+    width: 520px;
+  }
+
+  .desc {
+    top: -12px;
+    left: 52%;
+    font-size: 14px;
+  }
+
+  .fairy {
+    margin-left: 20px;
+    left: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .promo {
+    display: none;
+  }
+
+  .card-description__wrapper {
+    left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 320px;
+  }
+
+  .header {
+    padding-bottom: 160px;
+  }
+
+  .header-text {
+    font-size: 18px;
+  }
+
+  .title {
+    width: 320px;
+  }
+
+  .desc {
+    top: -8px;
+    left: 52%;
+    font-size: 10px;
+  }
+
+  .card-description {
+    width: 320px;
+  }
+
+  .card-description__circle {
+    top: -80px;
+    right: -80px;
+    width: 160px;
+    min-height: 160px;
+  }
+
+  .card-description__bonus-amount {
+    top: 18px;
+    right: 5px;
+    font-size: 24px;
+  }
+
+  .card-description__old-price {
+    font-size: 32px;
+  }
+
+  .card-description__line {
+    width: 125px;
+  }
+
+  .card-description__new-price {
+    font-size: 48px;
+  }
+
+  .halfStyle {
+    font-size: 48px;
+    margin-left: -14px;
+
+    &:nth-child(3) {
+      margin-left: -22px;
+    }
+  }
+
+  .currency {
+    margin-top: -40px;
+    font-size: 20px;
+  }
+
+  .card-description__duration {
+    font-size: 14px;
+  }
+
+  .order__title {
+    font-size: 24px;
+  }
+
+  .card-description__text {
+    font-size: 14px;
+  }
+
+  .fairy {
+    top: 60%;
+    width: 500px;
+  }
+
+  .header-text__wrapper {
+    margin-top: 450px;
+  }
+
+  .btn-order {
+    bottom: -40px;
+    font-size: 18px;
+    padding: 20px 15px;
+
+    img {
+      width: 20px;
+    }
+  }
+
+  .container-about {
+    padding: 0;
+  }
+
+  .card-about__wrapper {
+    width: 320px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .card-about__wrapper {
+    margin-bottom: 40px;
+  }
+
+  .about__text {
+    font-size: 18px;
+  }
+
+  .text__purple {
+    font-size: 14px;
+  }
+
+  .container-specifications {
+    padding: 0;
+  }
+
+  .card-specifications {
+    padding: 20px 10px;
+  }
+
+  .fairy-img {
+    width: 280px;
+    margin-bottom: 20px;
+  }
+
+  .specifications-list {
+    padding: 0 10px;
+  }
+
+  .specifications-list__item {
+    line-height: 20px;
+    font-size: 14px;
+
+    img {
+      width: 30px;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .section__title {
+    font-size: 20px;
   }
 }
