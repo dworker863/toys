@@ -9,13 +9,17 @@
     justify-content: center;
   }
 
+  .container-header {
+    justify-content: center;
+  }
+
   .fairy {
-    top: 62%;
+    top: 60%;
     left: 50%;
   }
 
   .header-text__wrapper {
-    margin-top: 600px;
+    margin-top: 650px;
     width: 100%;
   }
 
@@ -123,7 +127,7 @@
   }
 
   .fairy {
-    top: 59%;
+    top: 57%;
     left: 50%;
   }
 
@@ -139,8 +143,8 @@
     text-align: center;
   }
 
-  .promotions {
-    background-position: 50% 0;
+  .card-description__wrapper {
+    left: 6%;
   }
 
   .card-description__bonus-amount {
@@ -217,10 +221,6 @@
     width: 500px;
   }
 
-  .card-description__wrapper {
-    left: 6%;
-  }
-
   .card-specifications {
     margin-left: 10px;
     flex-wrap: wrap;
@@ -253,6 +253,10 @@
 
   .box {
     display: none;
+  }
+
+  .card-description__wrapper {
+    left: 0;
   }
 
   .about-text__wrapper {
@@ -295,6 +299,10 @@
     padding-bottom: 160px;
   }
 
+  .container-header {
+    padding: 0;
+  }
+
   .header-text {
     font-size: 18px;
   }
@@ -307,6 +315,19 @@
     top: -8px;
     left: 52%;
     font-size: 10px;
+  }
+
+  .fairy {
+    top: 58%;
+    width: 500px;
+  }
+
+  .header-text__wrapper {
+    margin-top: 480px;
+  }
+
+  .header-text {
+    justify-content: center;
   }
 
   .card-description {
@@ -362,15 +383,6 @@
 
   .card-description__text {
     font-size: 14px;
-  }
-
-  .fairy {
-    top: 60%;
-    width: 500px;
-  }
-
-  .header-text__wrapper {
-    margin-top: 450px;
   }
 
   .btn-order {
