@@ -23,7 +23,7 @@ function html() {
 function styles() {
   return gulp
     .src([
-      // 'assets/libs/owlCarousel/dist/assets/owl.carousel.min.css',
+      'assets/libs/owlCarousel/dist/assets/owl.carousel.min.css',
       './assets/scss/**/*.scss',
     ])
     .pipe(sourcemaps.init())
@@ -39,9 +39,9 @@ function styles() {
 function scripts() {
   return gulp
     .src([
-      // 'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/jquery/dist/jquery.min.js',
       './assets/js/common.js',
-      // 'assets/libs/owlCarousel/dist/owl.carousel.min.js',
+      'assets/libs/owlCarousel/dist/owl.carousel.min.js',
     ])
     .pipe(sourcemaps.init())
     .pipe(concat('scripts.min.js'))

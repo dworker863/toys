@@ -473,7 +473,8 @@ section {
 .card-review {
   z-index: 1;
   position: relative;
-  width: 31%;
+  margin-top: 10px;
+  margin-left: 10px;
   padding: 20px;
   border: 2px solid $color-primary;
   text-align: center;
