@@ -24,6 +24,7 @@ ul {
   flex-wrap: wrap;
   width: 1230px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .header {
@@ -361,6 +362,10 @@ section {
 
 .card-about__wrapper {
   margin-right: 70px;
+}
+
+.container-about {
+  flex-wrap: nowrap;
 }
 
 .about-text__wrapper {
