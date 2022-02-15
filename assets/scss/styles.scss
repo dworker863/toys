@@ -358,7 +358,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 80px;
   font-family: Academy, serif;
-  font-size: 30px;
+  font-size: 48px;
   text-align: center;
   color: $color-primary;
 
@@ -509,6 +509,59 @@ section {
   font-size: 24px;
   font-weight: 700;
   color: $color-primary;
+}
+
+.about-gift {
+  position: relative;
+  min-height: 1000px;
+  padding-bottom: 200px;
+  background-image: url(../images/Рисуй-цветом!.png);
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.card-gift {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  width: 720px;
+  margin-top: 100px;
+  padding: 65px 100px;
+  font-size: 24px;
+  font-weight: 200;
+  color: #fff;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+
+  &:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -10px;
+    left: -10px;
+    background-color: #202021;
+    border: 3px solid #fff;
+  }
+}
+
+.green-line {
+  width: 275px;
+  margin: 0 auto;
+  border-top: 3px dashed #6fa77a;
+}
+
+.box-with-light {
+  position: absolute;
+  top: 50%;
+  left: -260px;
+  transform: translateY(-50%);
 }
 
 @import 'media';
