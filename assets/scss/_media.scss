@@ -13,6 +13,9 @@
     width: 100%;
   }
 
+  .specifications {
+  }
+
   .card-specifications {
     font-size: 24px;
   }
@@ -30,18 +33,32 @@
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1280px) {
   .container {
     width: 1140px;
     justify-content: center;
   }
 
+  .header {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .container-about {
+    flex-wrap: nowrap;
+  }
+
   .card-about__wrapper {
-    margin-right: 0;
+    margin-right: 80px;
     margin-bottom: 80px;
   }
 
-  .about-text__wrapper {
-    text-align: center;
+  .about__text {
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .text__purple {
+    font-size: 16px;
   }
 }

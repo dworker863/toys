@@ -368,17 +368,27 @@ section {
 }
 
 .about__text {
+  font-weight: 100;
   margin-top: 0;
   font-size: 30px;
+  line-height: 42px;
 }
 
 .text__purple {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
   color: $color-primary;
 }
 
 .specifications {
   position: relative;
   background-color: #ffc0d3;
+}
+
+.container-specifications {
+  justify-content: center;
 }
 
 .star-specification {
