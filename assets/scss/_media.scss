@@ -1,1 +1,31 @@
+@media (max-width: 1600px) {
+  .header {
+    justify-content: center;
+  }
 
+  .fairy {
+    top: 62%;
+    left: 50%;
+  }
+
+  .header-text__wrapper {
+    margin-top: 600px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .container {
+    width: 1140px;
+    justify-content: center;
+  }
+
+  .card-about__wrapper {
+    margin-right: 0;
+    margin-bottom: 80px;
+  }
+
+  .about-text__wrapper {
+    text-align: center;
+  }
+}
