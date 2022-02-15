@@ -3,6 +3,10 @@
 
 * {
   box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 html,
@@ -10,6 +14,27 @@ body {
   font-family: Jost, serif;
   margin: 0;
   padding: 0;
+}
+
+input {
+  z-index: 1;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 24px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 8px 8px 0px $light-pink;
+  border: 3px solid $light-pink;
+
+  &::placeholder {
+    font-size: 24px;
+    color: #93928c;
+  }
+
+  &:focus {
+    border: 3px solid $light-pink;
+  }
 }
 
 ul {
@@ -562,6 +587,67 @@ section {
   top: 50%;
   left: -260px;
   transform: translateY(-50%);
+}
+
+.order {
+  position: relative;
+  background-image: url(../images/Розовый-фон-с-замком.png);
+}
+
+.order__form {
+  z-index: 100;
+  position: relative;
+  width: 532px;
+  padding: 45px;
+  padding-bottom: 60px;
+  border: 3px solid $color-primary;
+  background-color: $color-yellow;
+}
+
+.order__detail {
+  font-size: 24px;
+  font-weight: 300;
+  color: #646464;
+}
+
+.order__datail_gold {
+  color: $color-primary;
+}
+
+.btn_inverse {
+  display: flex;
+  bottom: 30px;
+  left: 50%;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #000;
+  transform: translateX(-50%);
+}
+
+form {
+  margin-bottom: 50px;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-size: 16px;
+  color: #b2b2b2;
+  background-color: #000;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 155px;
+}
+
+.contacts__title {
+  color: #626262;
 }
 
 @import 'media';

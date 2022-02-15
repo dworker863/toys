@@ -70,6 +70,10 @@
     font-size: 18px;
     line-height: 32px;
   }
+
+  .footer__wrapper {
+    padding: 0 80px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -124,6 +128,10 @@
     top: 50%;
     left: -290px;
     transform: translateY(-50%);
+  }
+
+  .footer__wrapper {
+    padding: 0 10px;
   }
 }
 
@@ -233,6 +241,20 @@
     left: 62%;
     width: 520px;
     transform: translate(-50%, -50%);
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer__wrapper div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
